@@ -21,5 +21,9 @@ run: $(TARGET)
 	clear
 	$(BIN_DIR)/$(TARGET)
 
+heartbeat: $(TARGET)
+	clear
+	$(BIN_DIR)/$(TARGET) --heartbeat
+
 clean:
 	rm -f $(OBJECTS) $(BIN_DIR)/$(TARGET)
