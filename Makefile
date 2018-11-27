@@ -18,6 +18,7 @@ $(TARGET): $(OBJECTS)
 	$(CC) -o $(BIN_DIR)/$@ $^ $(CFLAGS)
 
 run: $(TARGET)
+	clear
 	$(BIN_DIR)/$(TARGET)
 
 clean:
